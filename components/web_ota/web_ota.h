@@ -37,7 +37,8 @@ extern "C" {
 #include "esp_netif.h" 
  
 
-#define CONFIG_FIRMWARE_VERSION "00.01"
+#include "esp_app_desc.h"
+#define CONFIG_FIRMWARE_VERSION (esp_app_get_description()->version)
   
 #define CONFIG_SERVER_PORT      80
 #define WEB_BUFSIZE             4096 

@@ -2234,7 +2234,7 @@ static void cmd_tx_task(void *pvParameters)
                 { 
                     char show_x_raw[64]={0};
 
-                    snprintf(show_x_raw, sizeof(show_x_raw), "l:(%d,%d)  r:(%d,%d) fw:%s", joy_thrust.x_raw, joy_thrust.y_raw, joy_control.x_raw, joy_control.y_raw, CONFIG_FIRMWARE_VERSION);
+                    snprintf(show_x_raw, sizeof(show_x_raw), "l:(%d,%d)  r:(%d,%d) fw:%.8s", joy_thrust.x_raw, joy_thrust.y_raw, joy_control.x_raw, joy_control.y_raw, CONFIG_FIRMWARE_VERSION);
 
                     lcd_set_text_pos(0, LCD_JOY_STICK_RAW_TEXT_Y, show_x_raw);  
 

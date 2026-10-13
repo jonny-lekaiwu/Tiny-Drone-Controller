@@ -1,2 +1,4 @@
 build/
-.vscode/  
+.vscode/
+flash_all.bin
+scripts/__pycache__/
